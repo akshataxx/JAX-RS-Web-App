@@ -24,7 +24,7 @@ public class HelloWorldResource {
         if (name == null || name.trim().isEmpty()) {
             return "Hello, World!";
         } else {
-            return "Hello, " + name + "!";
+            return "Hello world, " + name + "!";
         }
     }
 

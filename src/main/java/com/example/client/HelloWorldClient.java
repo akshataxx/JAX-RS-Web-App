@@ -15,18 +15,12 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
-
 public class HelloWorldClient {
-
-
     public static void main(String[] args) throws IOException {
-        String baseUri = "http://localhost:8080/api"; // Replace with your base URI
+        String baseUri = "http://localhost:8080/api"; // base URI
         String username = "user";
         String password = "password";
         String name = "akshata";
-
-
-        //System.out.println("Program closing!");
 
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target(baseUri).path("hello").queryParam("name", name);
